@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input  id="1"/>
+<button id="2" onclick="go()">seach</button>
+<div id="3"></div>
+<body>
+    <script>
+        function go(){
+            let tv = ['chào','con chó','con mèo','xe ô tô'];
+            let el = ['hi','dog','cat','car'];
+            let a = document.getElementById('1').value;
+            
+            for(let i =0;i<el.length;i++){
+            if(a==el[i]) {
+                document.getElementById('3').innerText = tv[i];
+                break;
+            }else{
+                let b = ['không có'];
+                document.getElementById('3').innerText = b;
+                
+            };
+            
+            
+        }
+    }
+    
+    </script>
+</body>
+</html>
